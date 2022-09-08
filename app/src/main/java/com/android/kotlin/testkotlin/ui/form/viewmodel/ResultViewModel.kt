@@ -1,4 +1,4 @@
-package com.android.kotlin.testkotlin.viewmodel
+package com.android.kotlin.testkotlin.ui.form.viewmodel
 
 import androidx.databinding.BaseObservable
 import androidx.databinding.ObservableField

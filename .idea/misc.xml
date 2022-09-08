@@ -3,19 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/drawable-v24/ic_control.xml" value="0.163" />
         <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/drawable/bg_bg.xml" value="0.1" />
         <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/drawable/bg_control.xml" value="0.1" />
         <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/drawable/bg_tab.xml" value="0.1" />
         <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/drawable/bglogin.xml" value="0.1" />
         <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/drawable/border.xml" value="0.1" />
-        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/activity_calendar.xml" value="0.17592592592592593" />
+        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/activity_form.xml" value="0.24010416666666667" />
+        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/activity_main.xml" value="0.26124567474048443" />
         <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/activity_result.xml" value="0.10462962962962963" />
         <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/calendar_view_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
+        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/fragment_calendar_day.xml" value="0.25416666666666665" />
+        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/fragment_calendar_month.xml" value="0.25416666666666665" />
+        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/fragment_calendar_week.xml" value="0.25416666666666665" />
         <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/item.xml" value="0.48503937007874015" />
         <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/item_1.xml" value="0.11018518518518519" />
         <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/item_2.xml" value="0.11018518518518519" />
         <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/item_calendar.xml" value="0.25416666666666665" />
-        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/toolbar_calendar.xml" value="0.25416666666666665" />
+        <entry key="..\:/TT/Code/TestKotlin/app/src/main/res/layout/toolbar_calendar.xml" value="0.17592592592592593" />
       </map>
     </option>
   </component>

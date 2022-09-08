@@ -7,7 +7,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="com.android.kotlin.testkotlin.viewmodel.CategoryViewModel" />
+            type="com.android.kotlin.testkotlin.ui.main.viewmodel.MainViewModel" />
     </data>
 
     <LinearLayout
@@ -17,75 +17,18 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="match_parent"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="40dp"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:text="Title"
-            android:textColor="#F44336"
-            android:textSize="28dp" />
+            android:id="@+id/btnForm"
+            android:onClick="@{() -> viewModel.loadForm(context)}"
+            android:text="Form"/>
 
-        <EditText
-            android:id="@+id/edName"
-            android:layout_width="match_parent"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Name"
-            android:text="@={viewModel.category.name}"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/edPrice"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Price"
-            android:text="@={viewModel.category.price}"
-            android:inputType="number" />
-        <TextView
-            android:id="@+id/tvChange"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
-            android:gravity="center"
-            android:text='@{viewModel.category.name + " - "+ viewModel.category.price}'
-            android:textColor="#03A9F4"
-            android:textSize="20dp" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btnCheck"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_weight="1"
-                android:onClick="@{()-> viewModel.onClickCheck()}"
-                android:text="Check" />
-
-            <Button
-                android:id="@+id/btnShow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Show" />
-        </LinearLayout>
-        <TextView
-            android:id="@+id/tvMess"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
-            android:gravity="center"
-            android:text="@{viewModel.mess}"
-            android:visibility="@{viewModel.isShowMess ? View.VISIBLE : View.GONE}"
-            android:textColor="@{viewModel.isSucc ? @color/success : @color/failed}"
-            android:textSize="20dp" />
+            android:id="@+id/btnCalendar"
+            android:onClick="@{() -> viewModel.loadCalendar(context)}"
+            android:text="Calender"/>
     </LinearLayout>
 </layout>

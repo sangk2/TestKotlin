@@ -1,11 +1,11 @@
-package com.android.kotlin.testkotlin.activity
+package com.android.kotlin.testkotlin.ui.form.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.android.kotlin.testkotlin.BR
 import com.android.kotlin.testkotlin.R
-import com.android.kotlin.testkotlin.viewmodel.ResultViewModel
+import com.android.kotlin.testkotlin.ui.form.viewmodel.ResultViewModel
 import com.android.kotlin.testkotlin.databinding.ActivityResultBinding
 
 class ResultActivity : AppCompatActivity() {
@@ -19,9 +19,11 @@ class ResultActivity : AppCompatActivity() {
         binding.setVariable(BR.viewModel, viewModel)
 
         val intent = intent
-        val data : String? = intent.getStringExtra("data")
+        intent.getStringExtra("data")?.let {
+            viewModel.rs.set(it)
+        }
 
-        viewModel.rs.set(data)
+//        viewModel.rs.set(data)
 
     }
 }

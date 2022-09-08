@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.calendar.activity.CalendarActivity">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.android.kotlin.testkotlin.ui.calendar.viewmodel.CalendarViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_calendar" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentBottom="true" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/flControl"
+            android:onClick="@{() -> viewModel.setupAdd(context)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#d80f16"
+            android:src="@drawable/ic_control"
+            android:visibility="visible"
+            app:backgroundTint="@null"
+            app:maxImageSize="40dp" />
+    </RelativeLayout>
+
+</layout>

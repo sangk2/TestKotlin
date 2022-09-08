@@ -1,4 +1,4 @@
-package com.android.kotlin.testkotlin.activity
+package com.android.kotlin.testkotlin.ui.form.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,18 +6,16 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.android.kotlin.testkotlin.BR
 import com.android.kotlin.testkotlin.R
-import com.android.kotlin.testkotlin.databinding.ActivityMainBinding
-import com.android.kotlin.testkotlin.viewmodel.CategoryViewModel
+import com.android.kotlin.testkotlin.databinding.ActivityFormBinding
+import com.android.kotlin.testkotlin.ui.form.viewmodel.CategoryViewModel
 
-class MainActivity : AppCompatActivity() {
-
-    lateinit var binding : ActivityMainBinding
+class FormActivity : AppCompatActivity() {
+    lateinit var binding : ActivityFormBinding
     private val viewModel = CategoryViewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_form)
         binding.setVariable(BR.viewModel, viewModel)
 
         viewModel.onCreate()
@@ -26,13 +24,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnShow.setOnClickListener {
             viewModel.onClickShow { data ->
-                val intent = Intent(this, ResultActivity::class.java).apply {
+                val t = Intent(this, ResultActivity::class.java).apply {
                     putExtra("data", data)
                 }
-                startActivity(intent)
+                startActivity(t)
             }
 
         }
-
     }
 }

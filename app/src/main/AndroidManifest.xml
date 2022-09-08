@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestKotlin">
         <activity
-            android:name=".activity.ResultActivity"
+            android:name=".ui.calendar.activity.CalendarActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".ui.form.activity.FormActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.android.kotlin.testkotlin.ui.form.activity.ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.android.kotlin.testkotlin.ui.main.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

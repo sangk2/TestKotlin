@@ -1,4 +1,4 @@
-package com.android.kotlin.testkotlin.viewmodel
+package com.android.kotlin.testkotlin.ui.form.viewmodel
 
 import androidx.databinding.BaseObservable
 import androidx.databinding.ObservableField
@@ -30,6 +30,7 @@ class CategoryViewModel : BaseObservable() {
     fun onClickShow(callback: (String) -> Unit) {
         val n = category.get()?.name
         val p = category.get()?.price
-        callback.invoke("$n - $p")
+        isSucc.let { callback.invoke("$n - $p") }
+//        callback.invoke("$n - $p")
     }
 }

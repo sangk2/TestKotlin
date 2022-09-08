@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.android.kotlin.testkotlin.viewmodel.ResultViewModel" />
+            type="com.android.kotlin.testkotlin.ui.form.viewmodel.ResultViewModel" />
     </data>
 
     <LinearLayout
